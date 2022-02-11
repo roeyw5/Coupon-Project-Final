@@ -1,0 +1,96 @@
+.CouponsCustomer-table{
+    margin-left: 19%;
+    margin-right: 12%;
+    table-layout: fixed;
+    width: 80%;
+    user-select: none;
+    animation: table-appear 1s ease-out forwards;
+}
+
+.CouponsCustomer-table>tbody>tr>td {
+    padding: 0px; 
+}
+
+.CouponsCustomer-table-header{
+    padding-right: 0.5%;
+    text-align:left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+
+}
+
+.CouponsCustomer-table-text-label{
+    padding-left: 8px;
+    margin-bottom:-10px;
+    line-height: 4.1vh;
+    height: 8.2vh;
+    padding-right: 23px;
+    text-align:left;
+    width: 105%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    color: white;
+
+}
+#CouponsCustomer-table-description{
+    padding-right: 36px !important;
+}
+.CouponsCustomer-field-checkbox{
+    display: none;
+}
+
+.CouponsCustomer-field-checkbox~*~* {
+    background-color:rgb(17, 5, 82);
+    box-shadow: -1px -1px 1px black, 1px 1px 1px black;
+}
+.CouponsCustomer-field-checkbox:hover~*~*{
+    background-color:rgb(112, 56, 241);
+}
+.CouponsCustomer-field-checkbox:checked~*~*  {
+    background-color:  rgb(112, 56, 241);
+} 
+.CouponsCustomer-field-checkbox+*+*{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.CouponsCustomer-field-checkbox+*+*+*+*+*+*+*+*+*{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.CouponsCustomer-table-tr-seperator{
+    height:15px
+}
+
+#CouponsCustomer-table-category{
+text-transform: lowercase;
+}
+#CouponsCustomer-table-category::first-letter{
+    text-transform: uppercase;
+}
+.CouponsCustomer-table-image{
+    background-image: url(../../../../../../assests/Logo.png);
+    background-size: 100% 100%; 
+}
+
+.CouponsCustomer-table-image-div{
+    background-size: 100% 100%; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+@keyframes table-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

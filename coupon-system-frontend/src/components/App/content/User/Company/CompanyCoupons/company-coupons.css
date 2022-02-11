@@ -1,0 +1,100 @@
+.CompanyCoupons-table{
+    margin-left: 19%;
+    margin-right: 12%;
+    table-layout: fixed;
+    width: 80%;
+    user-select: none;
+    animation: table-appear 1s ease-out forwards;
+    background-color:rgb(0, 0, 0);
+
+}
+
+.CompanyCoupons-table>tbody>tr>td {
+    padding: 0px; 
+    
+}
+
+.CompanyCoupons-table-header{
+    padding-right: 0.5%;
+    text-align:left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: white;
+
+}
+
+.CompanyCoupons-table-text-label{
+    padding-left: 8px;
+    margin-bottom:-10px;
+    line-height: 4.1vh;
+    padding-right: 23px;
+    text-align:left;
+    width: 105%;
+    height: 8.2vh;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    color: white;
+
+}
+#CompanyCoupons-table-description{
+    padding-right: 36px !important;
+}
+.CompanyCoupons-field-checkbox{
+    display: none;
+}
+
+.CompanyCoupons-field-checkbox~*~* {
+    background-color:rgb(17, 5, 82);
+    box-shadow: -1px -1px 1px black, 1px 1px 1px black;
+}
+.CompanyCoupons-field-checkbox:hover~*~*{
+    background-color:rgb(112, 56, 241);
+}
+.CompanyCoupons-field-checkbox:checked~*~*  {
+    background-color:  rgb(112, 56, 241);
+} 
+.CompanyCoupons-field-checkbox+*+*{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.CompanyCoupons-field-checkbox+*+*+*+*+*+*+*+*+*{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.CompanyCoupons-table-tr-seperator{
+    height:15px
+}
+
+#CompanyCoupons-table-category{
+text-transform: lowercase;
+}
+#CompanyCoupons-table-category::first-letter{
+    text-transform: uppercase;
+}
+.CompanyCoupons-table-image{
+    background-image: url(../../../../../../assests/Logo.png);
+    background-size: 100% 100%; 
+}
+
+.CompanyCoupons-table-image-div{
+    background-size: 100% 100%; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+@keyframes table-appear {
+    from {
+      opacity: 0;
+      transform: translateY(3rem);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

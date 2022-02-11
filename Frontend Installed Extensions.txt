@@ -1,0 +1,7 @@
+In order to run the application, please install the next react extensions:
+
+npm install bootstrap
+npm install react-router-dom@5
+npm install formik
+npm install yup
+npm install axios

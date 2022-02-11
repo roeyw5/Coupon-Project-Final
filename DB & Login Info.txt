@@ -1,0 +1,15 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/coupons
+spring.datasource.username=root
+spring.datasource.password=1234
+
+Admin Login:
+admin@admin.com
+password- admin
+
+Company Login:
+spaceX@gmail.com
+password- 1234
+
+Customer Login:
+rami@gmail.com
+password- 1234
